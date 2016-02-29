@@ -15,6 +15,6 @@ public class Main {
         z.dodajPozycje(p1);
         z.dodajPozycje(p2);
 
-        System.out.println(z.toString());
+        System.out.println(z);
     }
 }
