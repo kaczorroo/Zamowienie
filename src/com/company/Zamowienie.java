@@ -11,8 +11,6 @@ public class Zamowienie {
     private int maksRozmiar;
 
     public Zamowienie() {
-        pozycje = new Pozycja[maksRozmiar];
-        ileDodanych = 0;
         maksRozmiar = 10;
     }
 
