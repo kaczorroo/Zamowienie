@@ -11,12 +11,17 @@ public class Zamowienie {
     private int maksRozmiar;
 
     public Zamowienie() {
-        this.maksRozmiar=10;
+        pozycje = new Pozycja[maksRozmiar];
+        ileDodanych = 0;
+        maksRozmiar = 10;
     }
 
     public Zamowienie(int maksRozmiar) {
+        pozycje = new Pozycja[maksRozmiar];
+        ileDodanych = 0;
         this.maksRozmiar = maksRozmiar;
     }
+
     public void dodajPozycje(Pozycja p){
         if(ileDodanych>=maksRozmiar){
             System.out.println("Limit pozycji wykorzystany.");
@@ -37,7 +42,7 @@ public class Zamowienie {
 
     @Override
     public String toString() {
-        String str = "Zamówienie:\n";
+        String str = "\nZamówienie:\n";
         for(int i = 0; i < ileDodanych; i++)
         {
             str += pozycje[i] + "\n";

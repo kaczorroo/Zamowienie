@@ -9,9 +9,12 @@ public class Main {
         System.out.println(p1);
         Pozycja p2 = new Pozycja("Cukier", 3, 4);
         System.out.println(p2);
-        Zamowienie z = new Zamowienie(20);
+
+
+        Zamowienie z = new Zamowienie(10);
         z.dodajPozycje(p1);
         z.dodajPozycje(p2);
-        System.out.println(z);
+
+        System.out.println(z.toString());
     }
 }
